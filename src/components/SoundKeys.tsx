@@ -1,14 +1,14 @@
 import * as React from 'react';
 import AudioEngine from './AudioEngine';
 
-export interface SynthJsProps { }
+export interface SoundKeysProps { }
 
-// 'HelloProps' describes the shape of props.
+// 'SoundKeysProps' describes the shape of props.
 // State is never set so we use the '{}' type.
-export class SynthJs extends React.Component<SynthJsProps, {}> {
+export class SoundKeys extends React.Component<SoundKeysProps, {}> {
 
   audioEngine: AudioEngine;
-  constructor (props: SynthJsProps) {
+  constructor (props: SoundKeysProps) {
     super(props);
     this.audioEngine = new AudioEngine();
   }
@@ -19,7 +19,7 @@ export class SynthJs extends React.Component<SynthJsProps, {}> {
 
   render() {
     return (<>
-      <h1>SynthJs</h1>
+      <h1>SoundKeys</h1>
       <button onClick={this.clickHandler}>Make sound</button>
     </>);
   }

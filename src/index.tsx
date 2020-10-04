@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { SynthJs } from "./components/SynthJs";
+import { SoundKeys } from "./components/SoundKeys";
 
 ReactDOM.render(
-    <SynthJs />,
+    <SoundKeys />,
     document.getElementById("example")
 );
